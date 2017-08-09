@@ -11,3 +11,54 @@
     min-height: 100vh;
   }
 }
+
+figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+figure a {
+  display: block;
+  overflow: hidden;
+  background: black;
+}
+
+figure .img-effet {
+  transition: 1s;
+  margin-bottom: 0;
+}
+
+figure:hover .img-effet {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+figcaption {
+  position: absolute;
+  left: 10px;
+  transition: 1s;
+}
+
+figure:hover figcaption {
+  color: white;
+  transform: translateY(-60px);
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.bouton:hover {
+  background-color: red;
+  color: black;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.modal-content:hover .bouton {
+  justify-content: flex-end;
+  /*transition: 1s;*/
+}
